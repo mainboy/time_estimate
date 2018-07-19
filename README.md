@@ -30,7 +30,7 @@ clock_t times(struct tms *buf);
 需要除以CLOCKS_PER_SEC来表示秒;
 
 
-## 周期计数器(0.1～1s推荐)
+## 周期计数器(<1s推荐)
 
 ### gettimeofday
 
