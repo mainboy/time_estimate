@@ -11,7 +11,7 @@ linux命令获取用户模式执行时间，内核模式执行时间，以及总
 ### times
 
 ```python
-#include <sys/times.h>
+#include <sys/time.h>
 
 struct tms {
 	clock_t tms_utime;
@@ -34,6 +34,15 @@ clock_t times(struct tms *buf);
 
 ### gettimeofday
 
+```python
+#include <sys/time.h>
+struct timeval {
+	long tv_sec;
+	long tv_usec;
+}
 
+int gettimeofday(struct timeval *tv, NULL);
+```
 
 ### rdtsc汇编指令
+见当前文档
